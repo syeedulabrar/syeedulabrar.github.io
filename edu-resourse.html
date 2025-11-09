@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Edu resourse</title>
+  <meta name="description" content="Educational resources and links." />
+  <style>
+    /* Minimal styling for the standalone page */
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6; margin:0; padding:1.5rem; background:#f7f7f8; color:#111; }
+    main { max-width:900px; margin:0 auto; background:white; padding:1.25rem; border-radius:8px; box-shadow:0 6px 18px rgba(10,10,10,0.06); }
+    h1 { margin-top:0; }
+    .grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+    .card { padding:1rem; border:1px solid #e6e6e9; border-radius:6px; background:#fff; }
+    a { color:#0b67a6; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    footer { text-align:center; color:#666; font-size:0.9rem; margin-top:1.5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Edu resourse</h1>
+    <p>Welcome — this page collects educational resources, guides and links. If opened in a popup, close the popup to return to the site. If JavaScript is disabled, this page will open in the normal browser window.</p>
+
+    <section>
+      <h2>Featured resources</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Free Courses</h3>
+          <p>Curated list of free online courses across programming, math, science, and design.</p>
+          <p><a href="#" target="_blank" rel="noopener">See courses →</a></p>
+        </div>
+        <div class="card">
+          <h3>Tutorials & Guides</h3>
+          <p>Step-by-step tutorials for projects and concepts.</p>
+          <p><a href="#" target="_blank" rel="noopener">View tutorials →</a></p>
+        </div>
+        <div class="card">
+          <h3>Books & Reading</h3>
+          <p>Recommended books and free reading material.</p>
+          <p><a href="#" target="_blank" rel="noopener">Browse books →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:1rem;">
+      <h2>Contribute</h2>
+      <p>If you want to add resources to this page, edit <code>edu-resourse.html</code> in the repo and open a pull request, or contact the site maintainer.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Your Name — <a href="/">Home</a>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

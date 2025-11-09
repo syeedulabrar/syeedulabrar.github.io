@@ -1,0 +1,75 @@
+/* modal.css - responsive modal + iframe styles
+   Place in assets/css/modal.css and include in your site layout
+*/
+.edu-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(12,12,13,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1.25rem;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.edu-modal {
+  width: 100%;
+  max-width: 960px;
+  height: 80vh;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(3, 10, 18, 0.5);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.edu-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: #f5f7f8;
+  border-bottom: 1px solid #e6e9ec;
+}
+.edu-modal-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111;
+}
+.edu-modal-close {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  color: #444;
+}
+.edu-modal-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  flex: 1 1 auto;
+}
+/* Loading spinner centered in modal body while iframe loads */
+.edu-modal-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  background: white;
+}
+.edu-spinner {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 4px solid #e6e9ec;
+  border-top-color: #0b67a6;
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+/* Responsive adjustments */
+@media (max-width: 720px) {
+  .edu-modal { height: 90vh; border-radius: 8px; }
+}
